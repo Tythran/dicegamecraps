@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Craps</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="materialize.min.css">
+    <script type="text/javascript" src = 'main.js'></script>
+
+    <style>
+
+        div.col {
+
+            padding: 10px;
+
+        }
+        img{
+
+            width: 250px;
+
+        }
+        a{
+
+            width: 400px;
+
+        }
+
+    </style>
+</head>
+<body class="blue lighten-2">
+
+<div id="dice_roll" class="dice_roll">
+
+    <h1 id="roll_text" class="center-align white-text">Current Roll</h1>
+    <br>
+    <br>
+
+    <div class="dice_btn container">
+        <div class="row">
+            <div class="col s12 m6 l3"></div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img id="dice_one" src="assets/dice-six-faces-four.png" alt="Dice reads 4">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img id="dice_two" src="assets/dice-six-faces-four.png" alt="Dice reads 4">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3"></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4 l2"></div>
+                <div class="col s12 l8 m4 center-align">
+                    <a id="roll_btn" onclick="playGame()" class="btn-large elevated blue darken-2 center-align">
+                        Roll Dice
+                    </a>
+                </div>
+                <div class="col s12 m4 l2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
